@@ -1,0 +1,301 @@
+Age,Gender,Annual Income,Marital Status,Number of Dependents,Education Level,Occupation,Health Score,Location,Policy Type,Previous Claims,Vehicle Age,Credit Score,Insurance Duration,Policy Start Date,Customer Feedback,Smoking Status,Exercise Frequency,Property Type,Premium Amount
+23,Male,1579081,Single,4,Master's,Employed,93,Urban,Premium,0,10,390,2,2023-11-20,Slow claim,Yes,Monthly,Condo,1625.31
+62,Female,1969591,Single,2,Bachelor's,Self-Employed,73,Suburban,Premium,1,6,886,4,2023-06-28,No issues,Yes,Weekly,House,2674.17
+55,Male,1873703,Single,4,High School,Self-Employed,33,Rural,Basic,0,5,474,3,2023-01-11,Slow claim,Yes,Monthly,Apartment,3071.06
+43,Female,422925,Divorced,3,Bachelor's,Employed,30,Suburban,Premium,1,1,584,3,2023-07-02,No issues,No,Monthly,House,3651.37
+42,Female,2082531,Married,3,Master's,Employed,89,Suburban,Basic,0,6,311,3,2023-11-21,,No,Rarely,House,532.79
+66,Male,1386563,Divorced,4,High School,Employed,42,Rural,Basic,0,12,378,1,2023-12-28,Slow claim,Yes,Daily,House,1085.5
+22,Male,875400,Married,2,PhD,Employed,81,Suburban,Premium,0,9,424,4,2023-05-27,No issues,No,Rarely,Condo,828.51
+57,Female,1334134,Single,3,Bachelor's,Self-Employed,31,Rural,Basic,1,13,331,1,2023-02-24,Slow claim,Yes,Daily,Condo,2838.71
+29,Male,2420760,Married,1,PhD,Employed,42,Suburban,Premium,0,1,735,4,2023-07-28,No issues,Yes,Daily,House,3170.6
+23,Male,2158173,Single,4,Master's,Unemployed,42,Urban,Premium,0,0,867,5,2023-10-31,Good service,No,Daily,Condo,1089.37
+48,Female,2100876,Divorced,3,Bachelor's,Employed,42,Suburban,Basic,1,8,891,4,2023-12-11,Slow claim,No,Daily,Apartment,1430.34
+73,Female,1210718,Single,3,High School,Self-Employed,73,Urban,Basic,0,2,459,3,2023-01-19,Good service,Yes,Rarely,Condo,137.83
+59,Male,1981930,Married,2,Master's,Unemployed,93,Rural,Premium,0,8,773,2,2023-04-17,No issues,No,Daily,Condo,540.37
+61,Male,1024214,Divorced,4,Bachelor's,Self-Employed,92,Suburban,Comprehensive,1,13,602,5,2023-06-24,,Yes,Monthly,House,1150.94
+58,Male,1746797,Married,0,High School,Unemployed,79,Suburban,Comprehensive,0,5,327,2,2023-02-05,Good service,No,Weekly,Condo,1235.29
+62,Female,1634951,Married,0,PhD,Employed,36,Suburban,Comprehensive,0,8,354,3,2023-11-20,,Yes,Daily,Apartment,2146.01
+47,Female,699516,Married,2,Bachelor's,Employed,96,Suburban,Comprehensive,0,10,628,4,2023-02-10,Slow claim,Yes,Weekly,House,1448.45
+25,Female,739511,Divorced,3,High School,Employed,63,Urban,Premium,1,2,554,5,2023-08-31,,Yes,Daily,House,4412.31
+65,Female,246719,Single,4,Bachelor's,Employed,63,Urban,Comprehensive,0,13,305,5,2023-12-02,Good service,No,Weekly,Condo,2246.12
+43,Female,435444,Married,2,Bachelor's,Employed,76,Suburban,Basic,0,3,858,1,2023-09-08,No issues,No,Monthly,Apartment,899.59
+46,Male,1140684,Divorced,3,PhD,Employed,81,Urban,Comprehensive,0,12,738,5,2023-10-06,Good service,Yes,Monthly,Apartment,918.27
+39,Male,1246905,Married,2,Master's,Unemployed,96,Rural,Premium,0,9,601,1,2023-04-07,,No,Weekly,House,28.69
+28,Female,496289,Married,4,High School,Employed,66,Urban,Basic,0,2,892,3,2023-10-30,,No,Rarely,Condo,28.05
+70,Female,1100534,Single,3,High School,Unemployed,68,Rural,Comprehensive,0,10,882,5,2023-06-02,,Yes,Monthly,House,1012.46
+62,Female,1550026,Single,2,Master's,Unemployed,79,Suburban,Premium,0,2,884,4,2023-01-23,No issues,No,Weekly,House,165.04
+54,Male,658167,Divorced,4,High School,Unemployed,40,Suburban,Comprehensive,0,8,455,5,2023-05-14,Slow claim,No,Weekly,Apartment,521.14
+40,Male,911768,Married,0,Bachelor's,Employed,44,Urban,Basic,0,14,828,2,2023-05-08,No issues,Yes,Daily,Condo,157.82
+64,Male,982028,Single,4,High School,Unemployed,70,Suburban,Basic,0,14,602,2,2023-07-10,,Yes,Rarely,House,175.42
+49,Male,1312129,Married,0,High School,Self-Employed,25,Rural,Comprehensive,0,13,735,2,2023-04-07,Good service,Yes,Rarely,House,3333.28
+43,Female,979341,Married,1,PhD,Unemployed,45,Urban,Comprehensive,0,7,815,2,2023-06-18,,No,Weekly,Apartment,1447.82
+43,Female,1868667,Married,4,High School,Self-Employed,77,Urban,Premium,1,8,397,4,2023-06-06,Good service,No,Monthly,House,5761.15
+30,Male,885989,Divorced,3,High School,Unemployed,98,Suburban,Comprehensive,1,4,568,3,2023-04-30,Slow claim,Yes,Monthly,Apartment,1840.06
+23,Male,1141352,Single,4,PhD,Self-Employed,61,Urban,Premium,1,13,377,4,2023-09-12,No issues,Yes,Monthly,House,1901.97
+49,Female,1010713,Married,3,High School,Employed,51,Urban,Basic,0,7,467,3,2023-04-22,Good service,Yes,Daily,House,1036.73
+68,Male,538997,Married,3,PhD,Self-Employed,55,Suburban,Comprehensive,0,11,548,2,2023-10-07,No issues,Yes,Rarely,House,1311.69
+21,Female,1745784,Divorced,1,High School,Employed,74,Suburban,Basic,0,5,813,1,2023-04-02,Slow claim,Yes,Rarely,Condo,1260.17
+66,Female,665070,Single,0,High School,Unemployed,63,Suburban,Comprehensive,0,11,817,3,2023-11-12,Good service,Yes,Rarely,Condo,3888.32
+65,Male,812503,Single,0,High School,Employed,21,Rural,Basic,0,3,533,5,2023-05-14,No issues,No,Rarely,Apartment,352.64
+33,Male,2002604,Married,1,Master's,Employed,63,Rural,Comprehensive,1,11,497,5,2023-01-15,Good service,Yes,Rarely,Apartment,3628.7
+54,Female,2377259,Married,0,Master's,Self-Employed,52,Urban,Comprehensive,0,0,618,2,2023-02-24,,No,Monthly,Condo,1390.49
+27,Female,1710023,Divorced,2,Bachelor's,Self-Employed,76,Suburban,Basic,0,1,847,3,2023-10-22,No issues,Yes,Daily,House,1791.15
+61,Male,2299235,Married,3,High School,Employed,90,Urban,Basic,0,5,885,4,2023-11-15,No issues,Yes,Weekly,Apartment,1471.01
+57,Female,2150057,Divorced,4,High School,Unemployed,96,Urban,Comprehensive,0,7,436,4,2023-03-19,,No,Daily,Condo,2088.94
+38,Female,1254185,Married,2,Master's,Unemployed,68,Urban,Premium,0,10,411,1,2023-08-08,No issues,No,Daily,Condo,583.06
+21,Female,1948696,Single,4,High School,Unemployed,49,Suburban,Basic,0,5,724,3,2023-07-29,No issues,No,Rarely,House,1104.03
+73,Male,888066,Single,4,Master's,Self-Employed,55,Rural,Comprehensive,1,0,480,1,2023-02-18,No issues,No,Rarely,Condo,143.63
+43,Female,1205192,Divorced,4,Master's,Self-Employed,34,Rural,Basic,0,4,419,1,2023-06-14,Good service,Yes,Monthly,Apartment,507.95
+68,Female,1385043,Single,2,PhD,Self-Employed,94,Suburban,Premium,0,6,318,4,2023-09-11,Slow claim,Yes,Monthly,Condo,1761.3
+56,Male,2405183,Divorced,1,Bachelor's,Self-Employed,87,Rural,Comprehensive,2,8,541,1,2023-12-20,Slow claim,No,Daily,House,2680.63
+62,Male,2136545,Single,4,High School,Employed,88,Urban,Premium,2,9,535,2,2023-11-06,Slow claim,No,Daily,Apartment,1683.62
+61,Female,1274207,Single,1,Bachelor's,Employed,46,Rural,Basic,0,3,637,3,2023-02-05,Slow claim,No,Rarely,Condo,1487.9
+29,Male,1666209,Single,2,PhD,Employed,45,Rural,Basic,0,9,420,4,2023-03-28,Slow claim,No,Weekly,House,399.69
+38,Male,585655,Married,0,Master's,Self-Employed,88,Urban,Comprehensive,0,9,728,3,2023-06-09,Slow claim,Yes,Monthly,Condo,436.95
+44,Male,2030540,Married,3,Master's,Employed,63,Suburban,Comprehensive,0,11,708,1,2023-02-24,Slow claim,Yes,Weekly,House,1950.52
+46,Female,1427291,Divorced,3,Bachelor's,Employed,76,Rural,Premium,0,7,577,4,2023-07-28,Slow claim,Yes,Daily,Condo,1191.24
+20,Female,1378533,Married,0,High School,Unemployed,59,Suburban,Premium,0,12,408,5,2023-01-04,,No,Rarely,Apartment,469.12
+49,Male,1939080,Married,1,PhD,Self-Employed,55,Rural,Premium,0,3,604,5,2023-02-11,,No,Rarely,House,1228.07
+26,Female,1619002,Married,2,PhD,Self-Employed,70,Rural,Comprehensive,0,10,704,4,2023-01-18,No issues,Yes,Monthly,House,2135.06
+60,Male,273920,Divorced,2,PhD,Self-Employed,85,Suburban,Comprehensive,1,0,523,3,2023-04-18,No issues,No,Weekly,Condo,3670.94
+56,Female,791573,Married,4,PhD,Unemployed,46,Urban,Comprehensive,0,1,458,5,2023-10-06,Slow claim,No,Monthly,House,121.99
+70,Female,524125,Single,1,Bachelor's,Unemployed,84,Suburban,Basic,1,12,603,3,2023-03-06,,Yes,Rarely,Apartment,3252.27
+60,Female,1863743,Married,4,Bachelor's,Employed,39,Urban,Comprehensive,3,7,513,1,2023-12-27,No issues,Yes,Monthly,House,4636.97
+38,Male,184353,Divorced,2,High School,Unemployed,52,Suburban,Comprehensive,0,9,540,5,2023-04-09,,No,Weekly,Condo,3708.53
+73,Female,585771,Single,4,PhD,Self-Employed,93,Suburban,Basic,0,9,509,2,2023-01-17,Good service,No,Weekly,Apartment,1531.37
+41,Male,1533868,Divorced,1,Master's,Unemployed,96,Suburban,Basic,0,10,482,5,2023-05-03,Good service,Yes,Monthly,Condo,2149.41
+36,Female,1767515,Married,0,Bachelor's,Self-Employed,93,Urban,Comprehensive,1,3,730,2,2023-10-01,,Yes,Weekly,House,743.65
+69,Male,1307931,Married,0,PhD,Employed,45,Urban,Comprehensive,0,2,576,5,2023-02-08,No issues,Yes,Monthly,House,4185.27
+39,Male,2165725,Single,1,Master's,Unemployed,87,Rural,Premium,0,0,579,3,2023-01-27,Slow claim,No,Daily,Apartment,1255.27
+22,Male,2305456,Divorced,4,PhD,Employed,94,Urban,Comprehensive,0,12,691,3,2023-11-07,Good service,Yes,Daily,Apartment,1288.75
+44,Female,417046,Single,0,PhD,Unemployed,98,Urban,Premium,0,3,516,2,2023-08-05,Slow claim,No,Rarely,Condo,722.51
+63,Male,2386026,Single,1,High School,Employed,21,Rural,Comprehensive,0,8,360,5,2023-05-06,,Yes,Weekly,Condo,2871.07
+28,Female,1574511,Married,0,Bachelor's,Employed,79,Urban,Basic,1,6,811,1,2023-10-03,Good service,Yes,Weekly,Condo,3577.69
+44,Male,1626925,Married,4,Master's,Self-Employed,99,Suburban,Basic,1,2,333,3,2023-11-05,Slow claim,Yes,Monthly,House,1495.27
+25,Male,328229,Married,3,PhD,Unemployed,81,Urban,Premium,0,6,643,2,2023-05-12,Good service,No,Weekly,House,463.4
+57,Female,1592492,Single,3,High School,Self-Employed,38,Urban,Comprehensive,0,1,459,3,2023-07-24,No issues,Yes,Rarely,Condo,2457.15
+45,Male,1841717,Single,3,Bachelor's,Employed,81,Suburban,Basic,1,2,428,2,2023-01-04,,No,Daily,Apartment,2169.78
+36,Female,1493898,Single,3,Master's,Employed,28,Suburban,Comprehensive,1,2,325,4,2023-04-22,,Yes,Rarely,Condo,1074.44
+30,Female,302783,Married,3,PhD,Unemployed,58,Urban,Premium,0,12,840,2,2023-08-06,Slow claim,No,Daily,Apartment,364.32
+50,Male,1355745,Married,0,High School,Unemployed,70,Urban,Comprehensive,1,8,557,1,2023-03-13,No issues,Yes,Weekly,House,2520.47
+56,Male,2346255,Married,4,Master's,Employed,56,Urban,Basic,0,13,505,1,2023-12-28,Good service,Yes,Monthly,Apartment,2820.54
+71,Male,1836199,Married,3,Bachelor's,Self-Employed,75,Suburban,Basic,1,6,744,4,2023-12-21,,No,Rarely,Condo,4515.78
+42,Female,429779,Divorced,3,High School,Employed,39,Rural,Premium,0,3,323,2,2023-04-05,No issues,No,Daily,Apartment,2410.78
+27,Female,2403852,Married,1,Master's,Employed,68,Urban,Premium,0,9,638,2,2023-05-25,Good service,No,Monthly,House,1191.13
+65,Male,2401312,Married,4,Bachelor's,Unemployed,71,Urban,Premium,0,13,596,4,2023-03-11,,Yes,Daily,House,1823.29
+53,Male,506549,Married,1,Master's,Self-Employed,70,Suburban,Premium,1,7,632,2,2023-07-03,Slow claim,No,Daily,Condo,1125.2
+57,Male,2022122,Married,0,Bachelor's,Employed,43,Suburban,Basic,0,0,374,2,2023-02-15,Good service,Yes,Rarely,Condo,1011.26
+23,Male,1076121,Married,4,PhD,Self-Employed,44,Urban,Basic,1,4,871,2,2023-05-23,No issues,No,Monthly,Condo,1437.61
+35,Female,1524836,Single,1,High School,Self-Employed,40,Urban,Basic,0,13,443,2,2023-07-22,Good service,No,Weekly,House,596.87
+61,Female,1168447,Single,0,PhD,Employed,56,Suburban,Basic,0,7,707,4,2023-08-12,Slow claim,No,Monthly,Apartment,1438.75
+65,Male,1978297,Divorced,3,High School,Self-Employed,66,Suburban,Premium,1,14,748,3,2023-08-06,Slow claim,No,Weekly,Condo,2557.18
+42,Female,2491983,Married,1,Master's,Employed,49,Suburban,Premium,0,7,506,5,2023-03-22,,No,Weekly,Apartment,2176.08
+63,Male,2008275,Married,4,Bachelor's,Employed,52,Urban,Basic,0,0,378,4,2023-10-17,Good service,No,Weekly,Apartment,1879.58
+65,Male,2335291,Single,2,Bachelor's,Unemployed,42,Rural,Premium,1,13,478,1,2023-09-10,,Yes,Weekly,Apartment,3140.73
+40,Female,2370464,Married,0,High School,Unemployed,37,Suburban,Comprehensive,0,11,784,2,2023-10-02,Slow claim,Yes,Rarely,House,2213.45
+69,Female,316253,Married,4,Master's,Employed,72,Suburban,Basic,1,10,843,2,2023-06-20,No issues,No,Weekly,House,2011.79
+34,Female,708120,Married,2,High School,Unemployed,85,Urban,Premium,0,14,862,3,2023-11-22,No issues,No,Weekly,Condo,954.74
+31,Male,1832455,Married,1,Master's,Self-Employed,43,Rural,Premium,0,2,435,2,2023-05-23,Good service,No,Monthly,House,142.41
+56,Male,1516182,Married,3,Master's,Unemployed,88,Rural,Comprehensive,0,13,663,5,2023-10-22,Good service,No,Rarely,House,870.37
+54,Male,220350,Divorced,2,PhD,Unemployed,65,Urban,Premium,0,3,390,2,2023-03-16,Slow claim,Yes,Weekly,Apartment,1713.64
+25,Male,328118,Married,0,Master's,Self-Employed,33,Rural,Comprehensive,1,14,726,3,2023-04-01,Slow claim,Yes,Rarely,Condo,1851.88
+65,Female,1349313,Divorced,3,Bachelor's,Self-Employed,49,Rural,Premium,0,2,549,1,2023-07-12,No issues,No,Weekly,Apartment,1165.21
+29,Female,1578797,Divorced,2,Master's,Self-Employed,20,Urban,Comprehensive,1,8,728,5,2023-07-22,,No,Monthly,Apartment,2243.54
+63,Male,502526,Married,3,PhD,Unemployed,23,Rural,Premium,0,11,711,5,2023-09-30,,Yes,Rarely,Apartment,775.37
+18,Female,511099,Divorced,4,Bachelor's,Employed,46,Urban,Basic,1,1,895,4,2023-04-19,Good service,Yes,Weekly,House,918.16
+63,Male,410416,Single,3,High School,Employed,56,Urban,Basic,0,1,593,2,2023-11-15,Good service,Yes,Daily,House,2799.18
+62,Female,1455881,Divorced,3,PhD,Employed,83,Urban,Premium,1,12,504,1,2023-05-01,Good service,Yes,Monthly,House,3511.32
+62,Male,118848,Divorced,1,High School,Employed,30,Suburban,Basic,0,0,616,4,2023-07-14,No issues,No,Daily,Condo,2212.09
+55,Male,1473833,Married,1,Master's,Employed,87,Suburban,Basic,0,9,397,3,2023-12-07,,No,Weekly,Condo,3291.99
+44,Female,1242228,Divorced,2,High School,Employed,38,Suburban,Premium,0,14,367,5,2023-07-16,No issues,No,Rarely,House,1018.24
+58,Male,1218364,Married,4,High School,Unemployed,31,Urban,Basic,0,9,611,4,2023-09-06,Slow claim,No,Weekly,House,5988.56
+33,Male,1730263,Single,2,PhD,Employed,75,Urban,Comprehensive,0,7,795,3,2023-11-28,Slow claim,Yes,Monthly,House,245.22
+62,Male,1354316,Divorced,1,High School,Unemployed,81,Rural,Basic,1,6,619,5,2023-12-22,Slow claim,Yes,Monthly,Condo,2330.51
+49,Male,1846597,Single,3,Master's,Employed,68,Rural,Basic,1,9,769,5,2023-07-02,,Yes,Daily,Apartment,1635.66
+44,Male,1933416,Single,4,Master's,Unemployed,29,Rural,Premium,0,8,406,3,2023-06-02,Slow claim,Yes,Weekly,Condo,2075.16
+46,Male,2308282,Married,4,High School,Employed,29,Urban,Basic,0,7,569,1,2023-03-13,,No,Monthly,Apartment,2788.84
+50,Female,2018187,Divorced,1,High School,Self-Employed,51,Rural,Basic,0,2,667,1,2023-07-16,Slow claim,Yes,Daily,Condo,910.03
+20,Female,1342494,Married,3,PhD,Employed,56,Rural,Premium,1,9,508,3,2023-12-02,Slow claim,Yes,Weekly,Apartment,5112.2
+25,Male,1281167,Married,2,Master's,Self-Employed,99,Suburban,Premium,0,11,308,3,2023-06-27,Slow claim,No,Weekly,House,442.78
+31,Male,665700,Single,2,High School,Self-Employed,42,Urban,Basic,1,10,344,1,2023-05-08,Good service,No,Rarely,Condo,3099.01
+24,Female,1539024,Single,1,PhD,Self-Employed,35,Rural,Premium,0,1,856,1,2023-02-09,Good service,Yes,Daily,Condo,13.45
+43,Female,433925,Single,0,Bachelor's,Self-Employed,95,Suburban,Comprehensive,0,10,663,4,2023-05-23,Good service,Yes,Rarely,Condo,749.44
+56,Female,2334966,Single,1,High School,Self-Employed,32,Urban,Premium,0,10,458,4,2023-03-28,,No,Weekly,Condo,1275.71
+55,Female,2128106,Divorced,2,PhD,Unemployed,22,Urban,Basic,1,2,455,1,2023-12-23,Slow claim,No,Monthly,House,2254.05
+44,Female,387360,Divorced,4,High School,Self-Employed,53,Suburban,Premium,2,12,323,3,2023-07-12,,No,Monthly,House,2794.66
+66,Male,1986294,Divorced,4,Master's,Self-Employed,52,Urban,Comprehensive,0,7,866,1,2023-02-20,Good service,Yes,Weekly,Apartment,5066.96
+50,Male,381048,Single,0,PhD,Employed,69,Urban,Premium,0,7,364,4,2023-01-25,Slow claim,Yes,Rarely,House,243.84
+22,Female,1830940,Single,3,Master's,Self-Employed,90,Suburban,Comprehensive,1,10,755,5,2023-11-07,,Yes,Daily,Apartment,393.93
+61,Female,310501,Single,0,Master's,Employed,94,Rural,Premium,0,7,444,5,2023-12-06,No issues,No,Daily,House,911.81
+50,Male,1271664,Married,3,Bachelor's,Employed,43,Urban,Comprehensive,1,8,501,3,2023-10-06,Good service,No,Rarely,Apartment,2626.23
+54,Female,1678871,Married,1,High School,Unemployed,98,Suburban,Basic,1,4,464,4,2023-02-15,,No,Monthly,Apartment,2443.94
+50,Male,1849146,Married,2,Master's,Employed,70,Rural,Premium,0,13,794,5,2023-02-05,Slow claim,No,Rarely,Apartment,1524.65
+49,Female,1104659,Single,3,PhD,Self-Employed,25,Rural,Premium,0,14,319,4,2023-03-14,Slow claim,No,Weekly,Condo,2570.15
+23,Female,2311896,Divorced,2,High School,Unemployed,95,Rural,Basic,1,1,511,3,2023-10-02,Slow claim,Yes,Daily,Apartment,748.3
+49,Male,1958371,Single,4,PhD,Unemployed,31,Urban,Comprehensive,1,10,467,4,2023-10-07,No issues,Yes,Daily,Apartment,3488.58
+63,Male,599835,Single,2,Bachelor's,Employed,67,Rural,Comprehensive,1,0,463,3,2023-11-02,Good service,No,Weekly,House,875.9
+35,Male,1710955,Divorced,4,Master's,Employed,83,Rural,Comprehensive,0,5,415,5,2023-02-05,No issues,Yes,Daily,Apartment,503.92
+52,Female,1853283,Divorced,3,High School,Self-Employed,39,Urban,Premium,0,14,847,3,2023-02-25,Good service,Yes,Rarely,House,63.9
+19,Female,900730,Single,1,Master's,Self-Employed,41,Suburban,Premium,0,2,527,5,2023-11-25,Slow claim,Yes,Daily,House,557.55
+37,Male,1871755,Married,3,High School,Unemployed,58,Suburban,Basic,0,5,550,1,2023-12-05,,Yes,Rarely,Apartment,2529.9
+42,Male,2256079,Divorced,2,Bachelor's,Employed,90,Suburban,Premium,0,3,531,1,2023-09-22,Slow claim,No,Daily,House,1345.72
+74,Female,2061074,Divorced,2,Master's,Employed,37,Urban,Comprehensive,0,10,888,1,2023-02-08,Good service,No,Daily,Apartment,2828.05
+30,Male,1930077,Divorced,0,High School,Employed,73,Rural,Premium,1,6,503,3,2023-01-26,Slow claim,No,Weekly,House,2195.47
+33,Male,1622793,Married,0,Bachelor's,Unemployed,56,Rural,Premium,0,8,505,4,2023-01-21,No issues,Yes,Daily,Condo,2126.35
+41,Male,749283,Married,2,Master's,Employed,28,Suburban,Comprehensive,0,14,496,2,2023-09-10,No issues,Yes,Weekly,Condo,1164.47
+74,Female,2008535,Divorced,0,High School,Self-Employed,76,Rural,Comprehensive,0,7,496,1,2023-11-05,No issues,Yes,Weekly,House,1875.06
+66,Female,974060,Single,4,Bachelor's,Employed,86,Suburban,Comprehensive,0,11,353,5,2023-08-19,,Yes,Monthly,Apartment,594.38
+19,Male,1377272,Single,4,Bachelor's,Employed,66,Rural,Premium,0,1,662,4,2023-04-06,,No,Monthly,Apartment,1689.53
+31,Female,854655,Married,3,Master's,Unemployed,34,Suburban,Comprehensive,2,3,315,4,2023-10-04,No issues,No,Daily,Apartment,4932.77
+64,Female,851240,Divorced,3,PhD,Employed,32,Suburban,Basic,2,14,435,3,2023-01-22,Good service,No,Daily,Apartment,2921.98
+21,Male,478267,Single,2,PhD,Employed,53,Urban,Comprehensive,0,12,421,3,2023-10-30,,Yes,Daily,Condo,1283.15
+66,Female,2407114,Married,0,High School,Unemployed,60,Suburban,Basic,0,9,474,1,2023-11-22,Good service,No,Daily,Apartment,147.73
+34,Female,454680,Married,1,High School,Self-Employed,64,Urban,Comprehensive,1,5,753,1,2023-09-20,No issues,Yes,Daily,House,3090.11
+70,Male,307021,Married,2,High School,Employed,39,Urban,Basic,0,2,659,5,2023-11-17,Good service,Yes,Weekly,Apartment,2270.49
+34,Male,2346705,Divorced,4,Master's,Self-Employed,60,Urban,Basic,1,12,894,2,2023-08-02,,No,Monthly,House,365.42
+42,Female,1432031,Single,1,High School,Unemployed,43,Rural,Premium,1,11,510,4,2023-06-20,Slow claim,Yes,Weekly,Apartment,1239.95
+55,Female,1150969,Divorced,2,High School,Self-Employed,74,Urban,Basic,2,3,857,4,2023-04-28,,Yes,Weekly,House,2492.69
+25,Male,1869979,Married,1,PhD,Self-Employed,83,Rural,Comprehensive,1,8,326,2,2023-12-03,Good service,No,Weekly,House,1397.54
+49,Female,1019967,Divorced,0,PhD,Self-Employed,72,Rural,Premium,0,9,602,2,2023-09-12,,Yes,Monthly,Condo,1432.08
+46,Female,407011,Married,0,PhD,Self-Employed,20,Urban,Premium,0,7,779,4,2023-03-11,Slow claim,No,Weekly,House,512.73
+62,Male,1851245,Single,1,Bachelor's,Employed,99,Suburban,Comprehensive,1,13,619,1,2023-12-16,Good service,Yes,Daily,Condo,379.81
+74,Female,522398,Divorced,0,Master's,Unemployed,21,Suburban,Basic,0,1,859,3,2023-01-22,No issues,No,Weekly,Condo,1735.5
+55,Male,1427183,Divorced,0,Master's,Unemployed,99,Suburban,Premium,0,3,488,5,2023-08-03,Good service,Yes,Daily,Apartment,1679.53
+41,Female,2377758,Single,1,High School,Employed,22,Rural,Premium,0,1,319,4,2023-03-11,,Yes,Weekly,Condo,1505.18
+41,Male,2346735,Divorced,1,Master's,Unemployed,61,Suburban,Comprehensive,0,10,764,4,2023-08-31,,No,Rarely,House,2485.17
+41,Male,965879,Divorced,2,Master's,Unemployed,28,Suburban,Basic,0,9,340,1,2023-05-31,,Yes,Weekly,House,464.38
+64,Female,1972723,Married,0,Bachelor's,Unemployed,27,Suburban,Basic,0,14,758,1,2023-06-09,Good service,No,Daily,House,1248.97
+36,Male,1570421,Divorced,1,PhD,Self-Employed,74,Rural,Basic,1,8,740,2,2023-09-03,,Yes,Monthly,Apartment,3635.66
+27,Female,1250486,Married,2,Master's,Self-Employed,78,Suburban,Basic,0,2,806,2,2023-10-03,Good service,No,Daily,Apartment,124.88
+37,Male,435827,Married,4,Master's,Unemployed,29,Suburban,Premium,1,6,587,1,2023-05-19,No issues,No,Daily,Condo,2081.29
+19,Female,1003262,Single,3,Master's,Employed,98,Rural,Basic,1,1,837,5,2023-12-31,No issues,Yes,Daily,Apartment,3335.41
+24,Female,1664603,Divorced,4,PhD,Unemployed,45,Rural,Basic,1,10,401,1,2023-07-01,Slow claim,Yes,Rarely,House,2223.93
+23,Female,2467915,Single,1,Master's,Unemployed,45,Rural,Premium,1,10,560,4,2023-02-28,No issues,No,Rarely,Condo,4380.14
+61,Male,111737,Divorced,2,Bachelor's,Unemployed,43,Rural,Premium,0,12,373,3,2023-01-03,No issues,No,Monthly,Condo,1789.03
+59,Male,1822624,Married,2,PhD,Self-Employed,56,Suburban,Basic,1,5,760,4,2023-03-15,Slow claim,Yes,Monthly,Condo,1956.86
+57,Female,2131208,Married,4,Master's,Self-Employed,34,Rural,Comprehensive,0,4,728,2,2023-09-10,No issues,Yes,Monthly,Apartment,2146.1
+44,Female,2382867,Single,4,PhD,Employed,53,Urban,Comprehensive,0,1,783,2,2023-07-16,,No,Monthly,Apartment,1539.82
+58,Female,1117128,Divorced,4,High School,Unemployed,36,Urban,Comprehensive,1,6,758,4,2023-05-04,No issues,No,Monthly,Apartment,4367.18
+27,Male,384348,Single,3,Bachelor's,Self-Employed,24,Suburban,Premium,0,7,485,2,2023-06-25,Good service,Yes,Rarely,Condo,716.7
+69,Female,750321,Married,2,PhD,Employed,49,Rural,Premium,1,11,340,4,2023-11-02,Slow claim,Yes,Monthly,House,2619.33
+46,Male,2141280,Divorced,2,Master's,Unemployed,73,Suburban,Premium,0,11,857,1,2023-07-28,No issues,No,Daily,Condo,554.79
+71,Male,2207043,Divorced,4,PhD,Self-Employed,81,Suburban,Basic,0,2,595,1,2023-01-22,Good service,Yes,Weekly,House,1546.57
+26,Female,1628977,Divorced,1,High School,Self-Employed,48,Suburban,Basic,0,4,356,4,2023-01-18,,Yes,Rarely,Apartment,416.32
+46,Male,394577,Divorced,1,High School,Employed,45,Urban,Comprehensive,0,7,856,4,2023-06-25,Good service,No,Weekly,House,2645.19
+57,Female,392612,Married,4,PhD,Unemployed,82,Suburban,Basic,1,5,896,1,2023-05-28,Good service,Yes,Daily,Apartment,2579.12
+46,Male,1247613,Single,1,Bachelor's,Self-Employed,74,Suburban,Comprehensive,0,0,567,5,2023-11-07,No issues,No,Rarely,Condo,1393.01
+43,Male,1511819,Divorced,1,Master's,Unemployed,86,Suburban,Basic,0,12,762,1,2023-08-01,No issues,Yes,Monthly,Condo,2167.99
+27,Male,177708,Divorced,2,Bachelor's,Unemployed,92,Suburban,Premium,0,10,321,5,2023-10-04,Slow claim,No,Monthly,Condo,3520.03
+39,Female,1746631,Divorced,1,Bachelor's,Employed,85,Urban,Basic,3,7,355,4,2023-08-02,No issues,Yes,Weekly,House,6390.08
+31,Female,1406824,Married,4,PhD,Employed,94,Rural,Basic,0,4,465,5,2023-05-07,Good service,No,Daily,House,2330.82
+35,Female,129526,Single,4,High School,Unemployed,53,Suburban,Basic,0,12,693,5,2023-08-28,Good service,Yes,Weekly,Condo,1074.53
+56,Female,329626,Married,1,PhD,Self-Employed,51,Urban,Basic,0,0,380,2,2023-08-15,No issues,Yes,Weekly,Apartment,1495.78
+53,Female,1190363,Married,2,PhD,Self-Employed,45,Suburban,Comprehensive,0,6,320,4,2023-09-20,Slow claim,No,Rarely,House,1606.66
+52,Female,1834205,Divorced,4,Master's,Employed,38,Suburban,Comprehensive,0,12,701,2,2023-03-11,Slow claim,No,Weekly,Condo,1714.33
+38,Female,2080958,Married,3,Bachelor's,Self-Employed,79,Urban,Premium,1,14,762,3,2023-08-23,Good service,No,Daily,Apartment,1136.08
+72,Male,1135123,Single,1,High School,Unemployed,77,Urban,Basic,0,3,743,2,2023-04-15,Slow claim,Yes,Weekly,House,855.11
+22,Male,808861,Single,2,Master's,Employed,84,Urban,Comprehensive,1,9,779,3,2023-10-16,No issues,Yes,Rarely,Condo,1766.32
+37,Male,2423944,Divorced,3,Bachelor's,Self-Employed,33,Suburban,Comprehensive,1,2,781,5,2023-10-19,Good service,No,Weekly,Apartment,3884.58
+24,Male,1200515,Divorced,3,High School,Unemployed,59,Rural,Comprehensive,1,1,661,3,2023-08-17,,No,Weekly,Apartment,200.89
+37,Female,856935,Single,0,Bachelor's,Employed,37,Rural,Premium,0,5,611,1,2023-12-12,,Yes,Monthly,Condo,629.53
+72,Male,1161553,Married,1,PhD,Employed,91,Suburban,Basic,0,13,814,2,2023-07-16,,No,Monthly,Apartment,2502.88
+38,Male,129019,Married,4,Bachelor's,Unemployed,41,Rural,Comprehensive,0,10,508,4,2023-01-10,Good service,No,Weekly,Apartment,426.48
+69,Female,824625,Married,1,High School,Employed,31,Urban,Premium,0,7,358,3,2023-08-10,Slow claim,No,Rarely,Apartment,2725.87
+46,Female,1337330,Divorced,1,Master's,Self-Employed,65,Rural,Premium,0,4,751,3,2023-10-11,No issues,No,Monthly,House,39.77
+57,Female,2304260,Single,1,High School,Self-Employed,90,Suburban,Comprehensive,0,2,465,3,2023-02-06,,No,Daily,House,1133.9
+44,Male,1871742,Single,0,PhD,Unemployed,93,Rural,Comprehensive,1,4,887,2,2023-02-08,No issues,No,Weekly,Condo,3379.58
+33,Male,1975105,Single,0,PhD,Employed,27,Rural,Premium,0,2,548,3,2023-04-10,Slow claim,No,Rarely,House,2670.68
+61,Female,1407764,Single,1,PhD,Self-Employed,46,Suburban,Comprehensive,0,2,811,4,2023-11-05,,No,Weekly,Apartment,2514.13
+73,Male,365412,Divorced,4,PhD,Employed,32,Urban,Premium,1,10,325,5,2023-07-12,Good service,No,Monthly,House,1150.88
+33,Male,1038223,Divorced,0,High School,Unemployed,44,Suburban,Basic,0,1,695,4,2023-12-23,Good service,Yes,Monthly,House,2842.4
+62,Male,2492883,Single,1,High School,Self-Employed,62,Rural,Comprehensive,1,0,568,5,2023-11-15,No issues,No,Monthly,Apartment,1105.6
+32,Female,206010,Married,0,Bachelor's,Self-Employed,42,Rural,Basic,1,8,577,5,2023-07-22,No issues,No,Rarely,Condo,3059.61
+58,Female,2210080,Single,2,Bachelor's,Self-Employed,25,Rural,Basic,0,4,459,1,2023-09-05,No issues,No,Daily,Apartment,1997.87
+62,Female,1742789,Single,1,PhD,Employed,60,Urban,Comprehensive,0,6,882,2,2023-05-01,Slow claim,No,Monthly,House,1614.82
+43,Female,781380,Single,3,Master's,Unemployed,24,Suburban,Basic,1,2,535,2,2023-02-02,Good service,Yes,Monthly,House,3564.5
+60,Female,1967172,Single,2,Master's,Self-Employed,38,Urban,Comprehensive,0,3,810,1,2023-05-26,Good service,No,Daily,House,72.64
+33,Male,2108551,Married,3,PhD,Employed,20,Rural,Comprehensive,0,6,555,1,2023-08-05,No issues,Yes,Monthly,Condo,319.37
+22,Female,203725,Divorced,3,Master's,Self-Employed,26,Rural,Comprehensive,0,10,328,4,2023-03-08,,Yes,Daily,House,2798.71
+23,Male,355406,Married,2,Bachelor's,Unemployed,54,Urban,Premium,0,6,827,2,2023-03-22,Good service,Yes,Weekly,Apartment,1216.52
+43,Male,1697799,Divorced,4,Bachelor's,Unemployed,88,Suburban,Premium,0,8,411,1,2023-01-06,,No,Weekly,House,2048.96
+69,Female,2497851,Married,2,Master's,Self-Employed,81,Rural,Comprehensive,0,7,462,2,2023-09-25,Good service,No,Daily,Apartment,437.79
+25,Male,157519,Single,4,High School,Employed,27,Rural,Basic,0,4,816,2,2023-11-25,Good service,No,Rarely,Condo,639.87
+43,Male,1697643,Single,4,Master's,Self-Employed,22,Suburban,Premium,0,4,836,1,2023-10-30,,Yes,Daily,Apartment,3094.08
+58,Male,427658,Single,2,Master's,Self-Employed,47,Urban,Basic,0,6,850,1,2023-05-19,Good service,Yes,Weekly,Apartment,525.83
+29,Female,1660300,Single,3,Master's,Self-Employed,72,Rural,Comprehensive,0,0,555,4,2023-08-05,No issues,No,Rarely,House,1156.02
+59,Male,1595955,Divorced,1,Master's,Employed,79,Rural,Comprehensive,0,10,754,5,2023-12-17,Slow claim,Yes,Rarely,House,471.39
+35,Male,317057,Divorced,4,PhD,Self-Employed,85,Suburban,Basic,0,9,496,3,2023-08-04,No issues,No,Daily,Condo,2782.31
+64,Female,1733747,Divorced,3,PhD,Self-Employed,47,Rural,Comprehensive,0,4,744,4,2023-04-18,No issues,No,Weekly,House,168.16
+51,Male,2252880,Married,4,Master's,Unemployed,33,Urban,Basic,0,5,601,5,2023-05-04,No issues,No,Monthly,Apartment,946.5
+49,Female,2172264,Married,1,Bachelor's,Self-Employed,22,Suburban,Basic,0,4,331,5,2023-09-23,Good service,Yes,Rarely,House,1829.79
+28,Female,169598,Married,3,High School,Self-Employed,31,Urban,Comprehensive,0,9,550,1,2023-06-12,No issues,Yes,Rarely,House,249.79
+44,Female,690199,Married,2,PhD,Self-Employed,25,Rural,Basic,1,11,580,5,2023-11-02,No issues,Yes,Monthly,Apartment,3530.29
+66,Male,677987,Divorced,0,PhD,Employed,88,Rural,Premium,1,1,454,1,2023-11-12,No issues,No,Daily,Condo,4191.77
+19,Male,1187901,Divorced,0,Master's,Employed,41,Rural,Basic,1,6,524,1,2023-01-14,Good service,Yes,Rarely,House,2003.7
+61,Male,443252,Divorced,2,PhD,Unemployed,85,Suburban,Comprehensive,0,0,601,3,2023-09-22,,No,Daily,Condo,914.88
+46,Female,2150431,Married,1,PhD,Unemployed,64,Urban,Premium,0,6,329,4,2023-05-16,Slow claim,Yes,Daily,Apartment,3296.63
+59,Male,1964243,Single,0,PhD,Unemployed,63,Urban,Basic,1,3,391,1,2023-07-09,No issues,Yes,Monthly,Condo,2279.82
+55,Male,2040039,Divorced,2,Master's,Self-Employed,56,Suburban,Premium,0,5,760,2,2023-04-07,No issues,Yes,Monthly,House,512.44
+42,Male,575690,Married,3,High School,Employed,85,Rural,Premium,0,6,511,2,2023-05-15,Slow claim,No,Daily,Condo,898.96
+35,Female,134974,Divorced,1,High School,Unemployed,23,Urban,Premium,0,4,665,2,2023-05-01,,No,Daily,House,3168.92
+53,Male,2285531,Married,4,High School,Self-Employed,27,Rural,Basic,0,5,639,5,2023-01-19,Good service,Yes,Monthly,Condo,1084.91
+25,Female,793380,Divorced,3,Bachelor's,Employed,53,Urban,Premium,0,11,630,2,2023-10-13,Slow claim,No,Weekly,Apartment,713.45
+51,Male,1675045,Married,2,Master's,Unemployed,51,Suburban,Premium,0,12,548,2,2023-02-22,Slow claim,No,Monthly,Apartment,497.96
+23,Male,2282647,Divorced,4,Bachelor's,Unemployed,63,Urban,Premium,1,0,589,1,2023-05-18,Good service,No,Weekly,House,521.09
+55,Male,186790,Divorced,2,High School,Unemployed,79,Suburban,Basic,0,5,794,1,2023-03-12,Good service,No,Monthly,Apartment,1268.64
+53,Female,113136,Single,0,High School,Employed,67,Suburban,Premium,1,12,879,1,2023-02-28,,Yes,Weekly,House,3607.3
+22,Male,113031,Married,0,PhD,Unemployed,40,Urban,Basic,0,7,454,3,2023-05-17,Good service,Yes,Weekly,Apartment,1959.27
+61,Male,475181,Married,4,PhD,Self-Employed,46,Suburban,Comprehensive,0,3,701,3,2023-12-02,Slow claim,No,Weekly,Condo,45.71
+41,Female,223979,Divorced,4,Bachelor's,Self-Employed,80,Rural,Comprehensive,0,8,881,3,2023-12-11,,Yes,Monthly,House,188.38
+62,Female,2067954,Divorced,3,PhD,Unemployed,36,Rural,Comprehensive,0,2,304,5,2023-05-20,No issues,Yes,Monthly,House,3998.83
+20,Female,1554220,Divorced,0,Master's,Self-Employed,60,Urban,Comprehensive,0,0,770,3,2023-07-04,,Yes,Monthly,House,2030.62
+28,Female,2452112,Married,1,PhD,Employed,63,Rural,Basic,1,9,598,1,2023-12-26,Slow claim,No,Monthly,House,1526.85
+46,Male,2023556,Married,0,PhD,Employed,80,Rural,Comprehensive,0,7,880,2,2023-03-27,Good service,Yes,Daily,House,2457.95
+28,Female,2411650,Married,0,Master's,Self-Employed,77,Rural,Premium,0,11,646,2,2023-12-11,No issues,Yes,Rarely,House,530.19
+36,Male,672526,Divorced,1,Bachelor's,Unemployed,57,Suburban,Comprehensive,0,5,802,5,2023-02-08,No issues,No,Monthly,Apartment,2407.28
+55,Female,790719,Single,2,Master's,Unemployed,44,Rural,Basic,1,12,399,2,2023-03-24,Slow claim,Yes,Monthly,House,621.22
+26,Female,2138581,Married,0,Bachelor's,Self-Employed,49,Suburban,Premium,0,6,385,1,2023-05-04,Slow claim,Yes,Rarely,Condo,2736.82
+56,Female,687718,Single,4,Bachelor's,Unemployed,52,Urban,Basic,0,11,855,4,2023-01-14,Slow claim,Yes,Rarely,Condo,385.19
+23,Female,237356,Divorced,2,Master's,Unemployed,37,Urban,Comprehensive,0,1,615,3,2023-10-25,Slow claim,Yes,Monthly,Condo,270.89
+27,Female,1705912,Married,1,Master's,Self-Employed,70,Rural,Comprehensive,0,1,635,1,2023-11-09,,No,Rarely,Apartment,359.58
+51,Female,2022313,Married,2,Master's,Self-Employed,36,Urban,Comprehensive,1,11,401,4,2023-05-20,Good service,No,Weekly,House,3297.13
+63,Female,2423670,Married,3,Bachelor's,Unemployed,71,Suburban,Premium,1,12,436,2,2023-11-02,,Yes,Monthly,Condo,1459.06
+27,Male,2326709,Married,1,Bachelor's,Self-Employed,80,Rural,Comprehensive,1,14,790,5,2023-10-09,Good service,No,Weekly,House,2847.27
+35,Male,388553,Divorced,0,High School,Employed,96,Urban,Premium,1,4,481,5,2023-10-20,Slow claim,No,Monthly,Apartment,724.94
+70,Male,1953060,Married,0,Master's,Unemployed,29,Suburban,Basic,0,0,650,2,2023-10-20,,No,Daily,Apartment,2448.21
+74,Female,2130706,Married,4,Master's,Self-Employed,80,Urban,Premium,0,14,489,3,2023-07-29,,No,Rarely,Condo,1169.87
+51,Male,1775489,Single,0,PhD,Self-Employed,26,Suburban,Comprehensive,0,9,458,3,2023-02-10,No issues,No,Daily,Apartment,1477.39
+43,Male,2067519,Single,3,Master's,Unemployed,46,Urban,Basic,0,3,399,4,2023-12-04,Good service,Yes,Monthly,Condo,521.3
+37,Male,2111152,Married,1,Bachelor's,Unemployed,34,Rural,Basic,2,11,857,1,2023-08-11,,Yes,Daily,Condo,4652.87
+52,Female,1171720,Divorced,3,High School,Employed,32,Urban,Premium,0,13,864,2,2023-11-25,Slow claim,No,Daily,Apartment,2243.97
+51,Female,196363,Divorced,0,High School,Self-Employed,34,Rural,Comprehensive,2,4,369,1,2023-12-17,Slow claim,No,Rarely,Condo,7422.52
+34,Female,1194866,Married,4,Bachelor's,Employed,23,Rural,Comprehensive,0,11,511,4,2023-03-10,No issues,No,Rarely,House,3008.87
+19,Male,584277,Married,3,Bachelor's,Self-Employed,85,Rural,Basic,1,11,638,1,2023-05-27,No issues,Yes,Daily,Condo,3293.2
+26,Male,372950,Married,2,Bachelor's,Self-Employed,24,Rural,Comprehensive,0,7,529,3,2023-03-12,No issues,Yes,Daily,House,6171.42
+72,Male,399816,Single,1,Bachelor's,Self-Employed,51,Urban,Premium,3,9,732,4,2023-01-19,Slow claim,No,Rarely,Condo,6273.93
+41,Male,1773697,Single,4,PhD,Unemployed,75,Rural,Basic,0,4,456,5,2023-12-19,Good service,Yes,Rarely,Apartment,1315.65
+45,Male,1310874,Married,1,High School,Self-Employed,99,Suburban,Comprehensive,0,13,335,2,2023-12-04,No issues,No,Daily,Condo,1141.57
+44,Female,1395612,Single,2,Bachelor's,Self-Employed,88,Rural,Comprehensive,0,14,502,1,2023-12-07,Good service,No,Monthly,House,1203.67
+62,Female,1888451,Single,1,High School,Self-Employed,30,Rural,Premium,0,14,658,4,2023-11-19,Good service,No,Weekly,Apartment,828.57
+21,Female,1415842,Single,1,Bachelor's,Employed,99,Suburban,Basic,0,11,408,1,2023-08-25,No issues,Yes,Monthly,Condo,668.46
+22,Male,1612028,Single,2,Master's,Employed,72,Suburban,Comprehensive,0,0,789,1,2023-07-10,No issues,No,Weekly,House,1612.02
+33,Male,306458,Married,0,High School,Unemployed,34,Urban,Premium,0,5,307,5,2023-12-28,Good service,No,Daily,House,1074.06
+45,Female,2142714,Divorced,0,Bachelor's,Employed,55,Urban,Basic,1,6,340,5,2023-07-21,Slow claim,No,Weekly,House,2714.47
+56,Male,1177073,Divorced,1,High School,Employed,93,Suburban,Premium,0,14,605,4,2023-08-23,No issues,No,Monthly,House,1830.04
+45,Male,472511,Married,0,PhD,Unemployed,51,Rural,Premium,0,8,607,5,2023-03-19,No issues,Yes,Rarely,Apartment,2298.35
+43,Male,2051988,Married,2,Master's,Employed,34,Suburban,Premium,0,8,476,1,2023-09-30,,No,Daily,Apartment,1180.02
+71,Female,1863090,Single,4,High School,Self-Employed,90,Suburban,Comprehensive,1,2,455,1,2023-10-27,Slow claim,No,Rarely,House,788.16
+27,Female,227262,Single,0,High School,Unemployed,96,Urban,Premium,0,11,341,2,2023-09-05,,No,Monthly,House,1794.28
+50,Male,563299,Married,0,High School,Self-Employed,98,Suburban,Premium,1,5,697,1,2023-07-01,No issues,No,Rarely,House,2729.0
+48,Female,137798,Married,0,Bachelor's,Employed,96,Suburban,Premium,0,1,527,5,2023-03-14,,Yes,Rarely,Condo,2322.5
+44,Female,749821,Single,2,PhD,Employed,89,Rural,Comprehensive,0,14,371,1,2023-01-13,No issues,No,Daily,Condo,212.24
+64,Female,339952,Married,1,Master's,Unemployed,56,Rural,Comprehensive,0,2,539,3,2023-08-17,,Yes,Daily,House,1145.27
+33,Female,1803771,Single,2,PhD,Employed,35,Suburban,Comprehensive,0,0,862,5,2023-09-07,Good service,Yes,Rarely,House,2558.43
+72,Male,1354127,Single,0,Bachelor's,Unemployed,69,Rural,Basic,0,1,456,4,2023-10-10,,No,Daily,House,2052.86
+36,Female,2452491,Divorced,1,Bachelor's,Employed,37,Suburban,Premium,0,6,836,2,2023-12-13,No issues,Yes,Daily,Condo,1808.48
+49,Male,1898617,Married,2,Bachelor's,Employed,57,Rural,Premium,0,1,455,3,2023-07-01,Good service,Yes,Weekly,Condo,1832.8
+47,Female,1567704,Married,2,High School,Unemployed,72,Suburban,Comprehensive,0,12,411,3,2023-10-30,Slow claim,No,Rarely,Condo,734.59
+66,Female,1322352,Divorced,2,PhD,Unemployed,95,Urban,Basic,0,7,456,4,2023-09-19,,No,Rarely,House,844.66
+43,Female,230800,Divorced,3,High School,Unemployed,43,Suburban,Comprehensive,1,4,493,3,2023-04-12,Good service,Yes,Monthly,Apartment,2259.64
+34,Female,268482,Divorced,2,Bachelor's,Unemployed,40,Urban,Comprehensive,0,0,372,2,2023-11-05,No issues,Yes,Daily,House,1241.91
+19,Female,1579141,Married,4,Master's,Employed,78,Urban,Comprehensive,0,7,652,4,2023-01-20,No issues,Yes,Weekly,Condo,466.94

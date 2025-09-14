@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual envs
+.venv/
+venv/
+ENV/
+env/
+
+# Data (ignore all CSVs by default but keep a small sample if desired)
+data/*.csv
+!data/insurance.csv
+
+# Models
+models/*.pkl
+
+# MLflow runs
+mlruns/
+
+# IDE / OS
+.vscode/
+.DS_Store
+.idea/
+
+# Logs
+*.log
