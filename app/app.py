@@ -1,161 +1,177 @@
 # app/app.py
 """
-Streamlit app for SmartPremium - robust import + prediction UI.
+SmartPremium - Streamlit app for real-time insurance premium estimates.
 
-Notes:
-- This file adds the project root to sys.path so `import src` works reliably
-  when Streamlit runs the app.
-- The app expects a trained sklearn Pipeline saved to models/pipeline.pkl.
-  If it's missing, the UI will show instructions.
+Run from the project root:  streamlit run app/app.py
+Requires a trained pipeline at models/pipeline.pkl (python -m src.train).
 """
-
+import json
 import os
 import sys
+from datetime import date
 from pathlib import Path
 
-# === Make sure project root is on sys.path so "src" can be imported ===
-try:
-    # app.py is in <repo>/app/app.py; parents[1] -> repo root
-    PROJECT_ROOT = Path(__file__).resolve().parents[1]
-except Exception:
-    PROJECT_ROOT = Path.cwd()
-
-PROJECT_ROOT = str(PROJECT_ROOT)
-if PROJECT_ROOT not in sys.path:
-    sys.path.insert(0, PROJECT_ROOT)
-
-# === Imports (streamlit must be imported before any `st.*` usage) ===
+import pandas as pd
 import streamlit as st
 
-# Import our local helper which loads the pipeline
-# src/predict.py should contain load_pipeline() that uses joblib to load models/pipeline.pkl
-try:
-    from src.predict import load_pipeline
-except Exception as e:
-    # If import fails, show message in the app and stop further execution.
-    st.title("SmartPremium — Insurance Premium Predictor")
-    st.error(
-        "Internal import error: couldn't import project modules from `src`.\n\n"
-        "Make sure you are running Streamlit from the project root and that "
-        "`src/__init__.py` exists. Exception:\n\n" + repr(e)
-    )
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.predict import load_pipeline  # noqa: E402
+
+MODEL_PATH = Path(os.environ.get("SMARTPREMIUM_MODEL_PATH", PROJECT_ROOT / "models" / "pipeline.pkl"))
+INFO_PATH = MODEL_PATH.parent / "model_info.json"
+UNKNOWN = "Unknown"
+MODEL_LABELS = {
+    "baseline_mean": "Baseline (constant)", "linear_regression": "Linear Regression",
+    "decision_tree": "Decision Tree", "random_forest": "Random Forest", "xgboost": "XGBoost",
+}
+FEATURE_COLUMNS = [
+    "Age", "Gender", "Annual Income", "Marital Status", "Number of Dependents", "Education Level",
+    "Occupation", "Health Score", "Location", "Policy Type", "Previous Claims", "Vehicle Age",
+    "Credit Score", "Insurance Duration", "Policy Start Date", "Customer Feedback", "Smoking Status",
+    "Exercise Frequency", "Property Type",
+]
+
+st.set_page_config(page_title="SmartPremium", page_icon="💰", layout="wide")
+
+
+@st.cache_resource
+def get_pipeline():
+    return load_pipeline(str(MODEL_PATH))
+
+
+@st.cache_data
+def get_model_info():
+    return json.loads(INFO_PATH.read_text()) if INFO_PATH.exists() else None
+
+
+def optional(value):
+    """Map the 'Unknown' choice to a missing value; the pipeline imputes it."""
+    return None if value == UNKNOWN else value
+
+
+if not MODEL_PATH.exists():
+    st.title("💰 SmartPremium")
+    st.error(f"No trained model found at `{MODEL_PATH}`. Train one first: `python -m src.train`")
     st.stop()
 
-# === Configuration ===
-MODEL_PATH = os.environ.get("SMARTPREMIUM_MODEL_PATH", "models/pipeline.pkl")
+pipeline = get_pipeline()
+info = get_model_info()
 
-st.set_page_config(page_title="SmartPremium", page_icon="💰", layout="centered")
-st.title("SmartPremium — Insurance Premium Predictor")
-st.markdown("Enter customer & policy details below and click **Predict** to get an estimate.")
+# ----------------------------------------------------------------------------- sidebar
+with st.sidebar:
+    st.header("Model")
+    if info:
+        st.write(f"**{MODEL_LABELS.get(info['best_model'], info['best_model'])}**")
+        m = info["test_metrics"]
+        c1, c2 = st.columns(2)
+        c1.metric("RMSLE", f"{m['rmsle']:.3f}")
+        c2.metric("R²", f"{m['r2']:.3f}")
+        c1.metric("MAE", f"{m['mae']:,.0f}")
+        c2.metric("RMSE", f"{m['rmse']:,.0f}")
+        st.caption(f"Evaluated on {info['test_rows']:,} held-out policies.")
+    st.divider()
+    st.caption("Fields marked *optional* can be left as **Unknown** - the model fills them in "
+               "the same way it handled missing values during training.")
 
-# === Try to load pipeline (if present) ===
-pipeline = None
-if not os.path.exists(MODEL_PATH):
-    st.warning(
-        f"Saved model not found at `{MODEL_PATH}`.\n\n"
-        "Please run the training script to create the model (example):\n\n"
-        "`python -m src.train --data data/insurance.csv --out models`"
-    )
-    # We don't `st.stop()` here because we still want users to see the input form,
-    # or possibly upload a model later. But prediction will be disabled until model exists.
-else:
-    try:
-        pipeline = load_pipeline(MODEL_PATH)
-    except Exception as e:
-        st.error(f"Failed to load saved model pipeline at `{MODEL_PATH}`:\n\n{e}")
-        pipeline = None
+st.title("💰 SmartPremium")
+st.write("Estimate an insurance premium from customer and policy details.")
 
-# === UI: Input form ===
-with st.form("predict_form"):
-    st.subheader("Customer & policy details")
+quote_tab, batch_tab, perf_tab = st.tabs(["Get a quote", "Batch predictions", "Model performance"])
 
-    # Numeric inputs
-    age = st.number_input("Age", min_value=16, max_value=120, value=30)
-    annual_income = st.number_input("Annual Income (INR)", min_value=0, value=300000)
-    number_of_dependents = st.number_input("Number of Dependents", min_value=0, value=0)
-    health_score = st.number_input("Health Score (0-100)", min_value=0, max_value=100, value=75)
-    previous_claims = st.number_input("Previous Claims", min_value=0, value=0)
-    vehicle_age = st.number_input("Vehicle Age (years)", min_value=0, value=2)
-    credit_score = st.number_input("Credit Score", min_value=300, max_value=900, value=700)
-    insurance_duration = st.number_input("Insurance Duration (years)", min_value=0, value=1)
+# ----------------------------------------------------------------------------- single quote
+with quote_tab:
+    with st.form("quote"):
+        st.subheader("Customer")
+        c1, c2, c3 = st.columns(3)
+        age = c1.number_input("Age", min_value=18, max_value=64, value=35)
+        gender = c2.selectbox("Gender", ["Male", "Female"])
+        marital = c3.selectbox("Marital status (optional)", [UNKNOWN, "Single", "Married", "Divorced"])
+        education = c1.selectbox("Education level", ["High School", "Bachelor's", "Master's", "PhD"])
+        occupation = c2.selectbox("Occupation (optional)", [UNKNOWN, "Employed", "Self-Employed", "Unemployed"])
+        dependents = c3.number_input("Number of dependents", min_value=0, max_value=4, value=1)
+        income = c1.number_input("Annual income", min_value=0, max_value=150000, value=32000, step=1000)
+        credit = c2.number_input("Credit score", min_value=300, max_value=849, value=575)
+        location = c3.selectbox("Location", ["Urban", "Suburban", "Rural"])
+        property_type = c1.selectbox("Property type", ["House", "Apartment", "Condo"])
 
-    # Categorical inputs
-    gender = st.selectbox("Gender", ["Male", "Female"])
-    marital_status = st.selectbox("Marital Status", ["Single", "Married", "Divorced"])
-    education_level = st.selectbox("Education Level", ["High School", "Bachelor's", "Master's", "PhD"])
-    occupation = st.selectbox("Occupation", ["Employed", "Self-Employed", "Unemployed"])
-    location = st.selectbox("Location", ["Urban", "Suburban", "Rural"])
-    policy_type = st.selectbox("Policy Type", ["Basic", "Comprehensive", "Premium"])
-    smoking_status = st.selectbox("Smoking Status", ["No", "Yes"])
-    exercise_frequency = st.selectbox("Exercise Frequency", ["Daily", "Weekly", "Monthly", "Rarely"])
-    property_type = st.selectbox("Property Type", ["House", "Apartment", "Condo"])
+        st.subheader("Health & lifestyle")
+        c1, c2, c3 = st.columns(3)
+        health = c1.slider("Health score", min_value=0.0, max_value=94.0, value=26.5, step=0.5)
+        smoking = c2.selectbox("Smoking status", ["No", "Yes"])
+        exercise = c3.selectbox("Exercise frequency", ["Daily", "Weekly", "Monthly", "Rarely"])
 
-    # Text / date-like fields
-    policy_start_date = st.text_input("Policy Start Date (YYYY-MM-DD)", value="2024-01-01")
-    customer_feedback = st.text_input("Customer Feedback (optional)", value="")
+        st.subheader("Policy")
+        c1, c2, c3 = st.columns(3)
+        policy_type = c1.selectbox("Policy type", ["Basic", "Comprehensive", "Premium"])
+        duration = c2.number_input("Insurance duration (years)", min_value=1, max_value=9, value=5)
+        start_date = c3.date_input("Policy start date", value=date(2023, 1, 1),
+                                   min_value=date(2019, 1, 1), max_value=date(2025, 12, 31))
+        claims = c1.number_input("Previous claims", min_value=0, max_value=9, value=1)
+        vehicle_age = c2.number_input("Vehicle age (years)", min_value=0, max_value=19, value=10)
+        feedback = c3.selectbox("Customer feedback (optional)", [UNKNOWN, "Poor", "Average", "Good"])
 
-    submit_button = st.form_submit_button(label="Predict Premium")
+        submitted = st.form_submit_button("Estimate premium", type="primary")
 
-# === Prediction logic ===
-def build_sample_dict():
-    """Return a single-row dict matching the dataset columns used in training."""
-    return {
-        "Age": age,
-        "Gender": gender,
-        "Annual Income": annual_income,
-        "Marital Status": marital_status,
-        "Number of Dependents": number_of_dependents,
-        "Education Level": education_level,
-        "Occupation": occupation,
-        "Health Score": health_score,
-        "Location": location,
-        "Policy Type": policy_type,
-        "Previous Claims": previous_claims,
-        "Vehicle Age": vehicle_age,
-        "Credit Score": credit_score,
-        "Insurance Duration": insurance_duration,
-        "Policy Start Date": policy_start_date,
-        "Customer Feedback": customer_feedback,
-        "Smoking Status": smoking_status,
-        "Exercise Frequency": exercise_frequency,
-        "Property Type": property_type,
-    }
+    if submitted:
+        sample = pd.DataFrame([{
+            "Age": age, "Gender": gender, "Annual Income": income, "Marital Status": optional(marital),
+            "Number of Dependents": dependents, "Education Level": education,
+            "Occupation": optional(occupation), "Health Score": health, "Location": location,
+            "Policy Type": policy_type, "Previous Claims": claims, "Vehicle Age": vehicle_age,
+            "Credit Score": credit, "Insurance Duration": duration,
+            "Policy Start Date": start_date.isoformat(), "Customer Feedback": optional(feedback),
+            "Smoking Status": smoking, "Exercise Frequency": exercise, "Property Type": property_type,
+        }])
+        estimate = max(0.0, float(pipeline.predict(sample)[0]))
+        st.metric("Estimated premium", f"{estimate:,.2f}")
+        if info:
+            q = info["target_quantiles"]
+            st.caption(f"For reference, half of all premiums in the data fall between "
+                       f"{q['0.25']:,.0f} and {q['0.75']:,.0f} (median {q['0.5']:,.0f}).")
+        st.info("This is a model-based estimate for demonstration purposes. See *Model performance* "
+                "for how accurate the model is on this dataset.")
 
-if submit_button:
-    sample = build_sample_dict()
+# ----------------------------------------------------------------------------- batch
+with batch_tab:
+    st.write("Upload a CSV with the dataset's columns (missing values are fine) to price many policies at once.")
+    upload = st.file_uploader("CSV file", type=["csv"])
+    if upload:
+        df = pd.read_csv(upload)
+        missing_cols = [c for c in FEATURE_COLUMNS if c not in df.columns]
+        if missing_cols:
+            st.error(f"Missing columns: {', '.join(missing_cols)}")
+        else:
+            out = df.copy()
+            out["Predicted Premium"] = pipeline.predict(df[FEATURE_COLUMNS]).clip(min=0).round(2)
+            st.dataframe(out.head(100), width="stretch")
+            st.caption(f"{len(out):,} rows priced (showing the first 100).")
+            st.download_button("Download predictions", out.to_csv(index=False), "predictions.csv", "text/csv")
 
-    if pipeline is None:
-        st.error(
-            "No trained model available to make predictions. "
-            "Please train and save the model first (see message above)."
-        )
+# ----------------------------------------------------------------------------- performance
+with perf_tab:
+    if not info:
+        st.info("Run `python -m src.train` to generate the model comparison.")
     else:
-        # Run prediction inside try/except to show friendly error messages
-        try:
-            import pandas as pd
-
-            df_sample = pd.DataFrame([sample])
-            # If the pipeline expects certain dtypes, DataFrame creation will use sensible defaults.
-            pred = pipeline.predict(df_sample)
-            # Many regressors return array-like; convert first element to float for display.
-            if hasattr(pred, "__len__") and len(pred) > 0:
-                est = float(pred[0])
-                st.success(f"Estimated Premium: ₹{est:,.2f}")
-                st.info("This is a model-based estimate for demonstration purposes.")
-            else:
-                st.error("Model returned an unexpected prediction format.")
-        except Exception as e:
-            st.error(
-                "Prediction failed with an exception. This can happen if the model expects "
-                "different feature names/types than provided.\n\n"
-                f"Error: {e}"
+        comp = pd.DataFrame(info["comparison"])
+        comp["model"] = comp["model"].map(lambda n: MODEL_LABELS.get(n, n))
+        st.subheader("Model comparison (20% hold-out set)")
+        st.dataframe(
+            comp[["model", "rmsle", "rmse", "mae", "r2", "cv_rmsle", "train_seconds"]].rename(columns={
+                "model": "Model", "rmsle": "RMSLE", "rmse": "RMSE", "mae": "MAE", "r2": "R²",
+                "cv_rmsle": "CV RMSLE", "train_seconds": "Train time (s)"}).style.format(precision=4),
+            width="stretch", hide_index=True,
+        )
+        base = next((r for r in info["comparison"] if r["model"] == "baseline_mean"), None)
+        best = info["test_metrics"]
+        if base:
+            gain = 100 * (base["rmsle"] - best["rmsle"]) / base["rmsle"]
+            st.markdown(
+                f"**What this shows:** the best model improves RMSLE by only **{gain:.3f}%** over a baseline that "
+                "ignores every input and always predicts the same typical premium. In this (synthetic) dataset the "
+                "premium is essentially independent of every customer and policy feature, so no model can predict it "
+                "better than the typical value. R² is negative because the models minimise RMSLE (log scale), which "
+                "pulls predictions below the average premium. The notebook documents this analysis in detail."
             )
-
-# === Footer / tips ===
-st.markdown("---")
-st.markdown(
-    "Tips:\n"
-    "- If prediction fails, check that the model pipeline (preprocessor + estimator) was "
-    "trained using the same column names as the fields above.\n"
-    "- To (re)train the model locally run: `python -m src.train --data data/insurance.csv --out models`."
-)

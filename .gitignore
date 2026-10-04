@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+.ipynb_checkpoints/
+.pytest_cache/
 
 # Virtual envs
 .venv/
@@ -10,15 +12,13 @@ venv/
 ENV/
 env/
 
-# Data (ignore all CSVs by default but keep a small sample if desired)
+# Data: the full dataset (42 MB) is downloaded with `python -m src.download_data`
 data/*.csv
 !data/insurance.csv
 
-# Models
+# Models: keep the deployed pipeline, ignore other experiments
 models/*.pkl
-
-# MLflow runs
-mlruns/
+!models/pipeline.pkl
 
 # IDE / OS
 .vscode/

@@ -1,21 +1,27 @@
 # quick_train.py
+"""Fit a single fast model (Linear Regression pipeline) without tuning or MLflow - handy for a smoke test.
+
+For the full workflow (all models, tuning, MLflow) use: python -m src.train
+"""
 import os
+
 import joblib
-from src.data import load_data
-from src.preprocessing import build_preprocessor
-from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LinearRegression
 
-def quick_train(data_path="data/insurance.csv", out_path="models/pipeline.pkl"):
+from src.data import DEFAULT_DATA_PATH, load_data
+from src.models import build_pipeline
+
+
+def quick_train(data_path=DEFAULT_DATA_PATH, out_path="models/pipeline_quick.pkl"):
     print("Loading data from:", data_path)
     X, y = load_data(data_path)
-    preprocessor, _, _ = build_preprocessor(X)
-    pipe = Pipeline([("preprocessor", preprocessor), ("model", LinearRegression())])
-    print("Fitting a LinearRegression pipeline on provided data (quick)...")
+    pipe = build_pipeline(LinearRegression())
+    print("Fitting a Linear Regression pipeline...")
     pipe.fit(X, y)
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     joblib.dump(pipe, out_path)
     print("Saved pipeline to:", out_path)
+
 
 if __name__ == "__main__":
     quick_train()

@@ -1,0 +1,47 @@
+artifact_path: /Users/dev2511/Desktop/projects to be competed /SmartPremium/mlruns/1/models/m-83a87a834c45451193aaab2f2e4fd05e/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.6
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 3.1.4
+model_id: m-83a87a834c45451193aaab2f2e4fd05e
+model_size_bytes: 217713
+model_uuid: m-83a87a834c45451193aaab2f2e4fd05e
+prompts: null
+run_id: 31fdf189b6e244f18451be97b3a32e90
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "Age", "required": true}, {"type": "string",
+    "name": "Gender", "required": true}, {"type": "double", "name": "Annual Income",
+    "required": true}, {"type": "string", "name": "Marital Status", "required": true},
+    {"type": "double", "name": "Number of Dependents", "required": true}, {"type":
+    "string", "name": "Education Level", "required": true}, {"type": "string", "name":
+    "Occupation", "required": false}, {"type": "double", "name": "Health Score", "required":
+    true}, {"type": "string", "name": "Location", "required": true}, {"type": "string",
+    "name": "Policy Type", "required": true}, {"type": "double", "name": "Previous
+    Claims", "required": false}, {"type": "long", "name": "Vehicle Age", "required":
+    true}, {"type": "double", "name": "Credit Score", "required": true}, {"type":
+    "long", "name": "Insurance Duration", "required": true}, {"type": "string", "name":
+    "Policy Start Date", "required": true}, {"type": "string", "name": "Customer Feedback",
+    "required": false}, {"type": "string", "name": "Smoking Status", "required": true},
+    {"type": "string", "name": "Exercise Frequency", "required": true}, {"type": "string",
+    "name": "Property Type", "required": true}]'
+  outputs: '[{"type": "float", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-04 02:56:05.764360'
